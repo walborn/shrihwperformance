@@ -62,6 +62,7 @@ if (window.performance) {
 window.addEventListener('onLoadGithubUser', ({ detail }) => {
   metricCounter.send('onLoadGithubUser', Math.round(detail.duration))
 })
+
 window.addEventListener('fid', ({ detail }) => {
   metricCounter.send('fid', Math.round(detail.value))
 })
