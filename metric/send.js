@@ -97,8 +97,6 @@ Counter.prototype.sendBatchRequest = function() {
         var xhr = new XMLHttpRequest();
         xhr.open('POST', this.counterUrl);
         xhr.send(data);
-				console.log(222, data)
-				
     }
 }
 

@@ -8,6 +8,7 @@ const Stats = ({ values }) => {
   const to = new Date()
   console.table(showMetricByPeriod(values, page, from, to))
   console.table(showSlice('browser', 'onLoadGithubUser', values, page, from, to))
+  console.log('\n')
   
   return (
     <Layout>

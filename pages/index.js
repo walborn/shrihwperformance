@@ -8,13 +8,9 @@ import { Layout } from '../components/Layout'
 const Index = () => {
   const [ user, setUser ] = React.useState()
   React.useEffect(() => {
-    console.log(34)
-    getFID(({ value }) => {
-      console.log(234, value)
-      
-      return window
+    getFID(({ value }) => window
       .dispatchEvent(new CustomEvent('fid', { detail: { value } }))
-    })
+    )
   }, [])
   const handleSubmit = async ({ login }) => {
     const start = performance.now()
